@@ -1,0 +1,31 @@
+/* Coolors Exported Palette - https://coolors.co/395c6b-80a4ed-ddfff7-8d5b4c-5a2a27 */
+
+- CSV
+
+395c6b,80a4ed,ddfff7,8d5b4c,5a2a27
+
+- With #
+
+#395c6b, #80a4ed, #ddfff7, #8d5b4c, #5a2a27
+
+- Array
+
+["395c6b","80a4ed","ddfff7","8d5b4c","5a2a27"]
+
+- Object
+
+{"Blue Slate":"395c6b","Wisteria Blue":"80a4ed","Frozen Water":"ddfff7","Terracotta Clay":"8d5b4c","Espresso":"5a2a27"}
+
+- Extended Array
+
+[{"name":"Blue Slate","hex":"395c6b","rgb":[57,92,107],"cmyk":[47,14,0,58],"hsb":[198,47,42],"hsl":[198,30,32],"lab":[37,-8,-13]},{"name":"Wisteria Blue","hex":"80a4ed","rgb":[128,164,237],"cmyk":[46,31,0,7],"hsb":[220,46,93],"hsl":[220,75,72],"lab":[67,7,-40]},{"name":"Frozen Water","hex":"ddfff7","rgb":[221,255,247],"cmyk":[13,0,3,0],"hsb":[166,13,100],"hsl":[166,100,93],"lab":[97,-12,0]},{"name":"Terracotta Clay","hex":"8d5b4c","rgb":[141,91,76],"cmyk":[0,35,46,45],"hsb":[14,46,55],"hsl":[14,30,43],"lab":[44,19,17]},{"name":"Espresso","hex":"5a2a27","rgb":[90,42,39],"cmyk":[0,53,57,65],"hsb":[4,57,35],"hsl":[4,40,25],"lab":[24,22,12]}]
+
+- XML
+
+<palette>
+  <color name="Blue Slate" hex="395c6b" r="57" g="92" b="107" />
+  <color name="Wisteria Blue" hex="80a4ed" r="128" g="164" b="237" />
+  <color name="Frozen Water" hex="ddfff7" r="221" g="255" b="247" />
+  <color name="Terracotta Clay" hex="8d5b4c" r="141" g="91" b="76" />
+  <color name="Espresso" hex="5a2a27" r="90" g="42" b="39" />
+</palette>
