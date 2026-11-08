@@ -2,6 +2,8 @@ import csv
 import tkinter as tk
 from pathlib import Path
 from tkinter import messagebox
+from tkinter import scrolledtext
+from pill_camera import CameraPage
 
 DATA_FILE = Path(__file__).with_name("pills.csv")
 
@@ -33,8 +35,10 @@ def search_pills():
             f"Possible match: {row.get('drug_name', 'Unknown')}\n"
         )
 
+# def show_page(window, page):
+#     return lambda: window.pages[page].tkraise()
 def show_page(window, page):
-    return lambda: window.pages[page].tkraise()
+    return lambda: window.show_page(page)
     
 COLORS = {
     "background": "#FFFFFF",
@@ -313,6 +317,26 @@ class ImagePage(tk.Frame):
         self.continue_button = tk.Button(self, text="Continue", command=self.on_continue)
         self.continue_button.pack(pady=10)
 
+class SummaryPage(tk.Frame):
+    def __init__(self, window, on_continue, previous_page):
+        super().__init__(window.container, bg="#FFFFFF")
+
+        tk.Button(self, text="Back", command=show_page(window, previous_page)).pack(pady=10)
+        tk.Label(self, text="Session overview:").pack(pady=10)
+
+        self.text = scrolledtext.ScrolledText(self, width=50, height=22,
+                                              font=("Consolas", 10), wrap="word")
+        self.text.pack(padx=12, pady=8, fill="both", expand=True)
+        self.text.config(state="disabled")
+
+        tk.Button(self, text="Continue", command=on_continue).pack(pady=10)
+
+    def set_text(self, content):
+        self.text.config(state="normal")
+        self.text.delete("1.0", tk.END)
+        self.text.insert("1.0", content)
+        self.text.config(state="disabled")
+
 class ResultsPage(tk.Frame):
     def __init__(self, window, previous_page):
         super().__init__(window.container, bg="#FFFFFF")
@@ -349,8 +373,16 @@ class App(tk.Tk):
             
             "tablet_instructions": TabletInstructionsPage(self, on_continue=lambda: self.show_page("swirl_instructions"), previous_page="solvent_selection"),
             "swirl_instructions": SwirlInstructionsPage(self, on_continue=lambda: self.show_page("image_page")),
-            "image_page": ImagePage(self, on_continue=(lambda: self.show_page("results_page")), previous_page="swirl_instructions"),
-            "results_page": ResultsPage(self, previous_page="swirl_instructions")
+            "image_page": ImagePage(self,
+                        on_continue=lambda: self.show_page("camera_page"),
+                        previous_page="swirl_instructions"),
+            "camera_page": CameraPage(self,
+                          on_next=self.show_summary,
+                          on_back=lambda: self.show_page("image_page")),
+            "summary_page": SummaryPage(self,
+                            on_continue=lambda: self.show_page("results_page"),
+                            previous_page="camera_page"),
+            "results_page": ResultsPage(self, previous_page="summary_page"),
         }
         
         for page in self.pages.values():
@@ -360,9 +392,28 @@ class App(tk.Tk):
         self.geometry(f"{int(width)}x{int(height)}")
         
         self.show_page("drug_selection")
+        self.protocol("WM_DELETE_WINDOW", self.on_close)
+
+    def on_close(self):
+        for p in self.pages.values():
+            if hasattr(p, "stop"):
+                p.stop()
+        self.destroy()
         
-    def show_page(self, page):
-        self.pages[page].tkraise()
+    # def show_page(self, page):
+    #     self.pages[page].tkraise()
+    def show_page(self, name):
+        for p in self.pages.values():          # stop any camera that's running
+            if hasattr(p, "stop"):
+                p.stop()
+        self.pages[name].tkraise()
+        if hasattr(self.pages[name], "start"):
+            self.pages[name].start()
+
+    def show_summary(self, text):
+        self.pages["summary_page"].set_text(text)
+        self.show_page("summary_page")
+
         
     def show_form_selection(self):
         self.show_page("form_selection")
