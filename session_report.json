@@ -1,0 +1,175 @@
+{
+  "duration_s": 197.4,
+  "objects": [
+    {
+      "form": "pill",
+      "color": "orange",
+      "label": "(none read)",
+      "first_seen_s": 0.4,
+      "last_seen_s": 193.2
+    },
+    {
+      "form": "pill",
+      "color": "black",
+      "label": "(none read)",
+      "first_seen_s": 0.4,
+      "last_seen_s": 197.4
+    },
+    {
+      "form": "pill",
+      "color": "brown",
+      "label": "(none read)",
+      "first_seen_s": 0.7,
+      "last_seen_s": 187.4
+    },
+    {
+      "form": "tablet",
+      "color": "brown",
+      "label": "(none read)",
+      "first_seen_s": 1.5,
+      "last_seen_s": 186.3
+    },
+    {
+      "form": "tablet",
+      "color": "black",
+      "label": "(none read)",
+      "first_seen_s": 5.0,
+      "last_seen_s": 197.0
+    },
+    {
+      "form": "tablet",
+      "color": "orange",
+      "label": "(none read)",
+      "first_seen_s": 10.7,
+      "last_seen_s": 188.0
+    },
+    {
+      "form": "pill",
+      "color": "green",
+      "label": "(none read)",
+      "first_seen_s": 10.9,
+      "last_seen_s": 185.2
+    },
+    {
+      "form": "pill",
+      "color": "yellow",
+      "label": "(none read)",
+      "first_seen_s": 11.0,
+      "last_seen_s": 195.6
+    },
+    {
+      "form": "tablet",
+      "color": "yellow",
+      "label": "(none read)",
+      "first_seen_s": 11.1,
+      "last_seen_s": 195.5
+    },
+    {
+      "form": "pill",
+      "color": "blue",
+      "label": "(none read)",
+      "first_seen_s": 11.1,
+      "last_seen_s": 181.1
+    },
+    {
+      "form": "tablet",
+      "color": "blue",
+      "label": "(none read)",
+      "first_seen_s": 11.2,
+      "last_seen_s": 185.2
+    },
+    {
+      "form": "pill",
+      "color": "red",
+      "label": "(none read)",
+      "first_seen_s": 11.3,
+      "last_seen_s": 163.6
+    },
+    {
+      "form": "tablet",
+      "color": "green",
+      "label": "(none read)",
+      "first_seen_s": 11.5,
+      "last_seen_s": 195.6
+    },
+    {
+      "form": "pill",
+      "color": "purple",
+      "label": "(none read)",
+      "first_seen_s": 11.7,
+      "last_seen_s": 107.7
+    },
+    {
+      "form": "pill",
+      "color": "pink",
+      "label": "(none read)",
+      "first_seen_s": 11.9,
+      "last_seen_s": 107.6
+    },
+    {
+      "form": "tablet",
+      "color": "red",
+      "label": "(none read)",
+      "first_seen_s": 13.0,
+      "last_seen_s": 153.5
+    },
+    {
+      "form": "tablet",
+      "color": "white",
+      "label": "(none read)",
+      "first_seen_s": 19.1,
+      "last_seen_s": 195.5
+    },
+    {
+      "form": "tablet",
+      "color": "gray",
+      "label": "(none read)",
+      "first_seen_s": 19.3,
+      "last_seen_s": 153.8
+    },
+    {
+      "form": "pill",
+      "color": "gray",
+      "label": "(none read)",
+      "first_seen_s": 19.4,
+      "last_seen_s": 194.7
+    },
+    {
+      "form": "pill",
+      "color": "white",
+      "label": "(none read)",
+      "first_seen_s": 19.7,
+      "last_seen_s": 195.3
+    },
+    {
+      "form": "tablet",
+      "color": "purple",
+      "label": "(none read)",
+      "first_seen_s": 27.2,
+      "last_seen_s": 106.4
+    },
+    {
+      "form": "tablet",
+      "color": "pink",
+      "label": "(none read)",
+      "first_seen_s": 69.6,
+      "last_seen_s": 106.5
+    },
+    {
+      "form": "powder",
+      "color": "gray",
+      "label": "(none read)",
+      "first_seen_s": 111.1,
+      "last_seen_s": 148.5
+    }
+  ],
+  "water_properties": {
+    "fully_dissolved": false,
+    "tint": "green",
+    "fizzing": false,
+    "cloudy_suspended_residue": true,
+    "non_suspended_residue": true,
+    "fizzing_seen_at_any_time": true
+  },
+  "ethanol_soluble": "not measured (needs a separate ethanol test)"
+}
