@@ -1,0 +1,12 @@
+# Paths are relative to this file's location
+path: C:/Users/shell/OneDrive/Documents/GitHub/gullhacks/gullhacks/yolo_dataset              # root folder (this yolo_dataset folder)
+train: images/train  # training images
+val: images/val      # validation images
+
+# Number of classes
+nc: 2
+
+# Class names, in ID order
+names:
+  0: pill
+  1: not_pill
