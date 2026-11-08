@@ -1,0 +1,4 @@
+opencv-python
+numpy
+pillow
+ultralytics   # only needed once you have trained YOLO weights
