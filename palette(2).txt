@@ -1,0 +1,30 @@
+/* Coolors Exported Palette - https://coolors.co/477285-80a4ed-ddfff7-1e3038 */
+
+- CSV
+
+477285,80a4ed,ddfff7,1e3038
+
+- With #
+
+#477285, #80a4ed, #ddfff7, #1e3038
+
+- Array
+
+["477285","80a4ed","ddfff7","1e3038"]
+
+- Object
+
+{"Blue Slate":"477285","Wisteria Blue":"80a4ed","Frozen Water":"ddfff7","Jet Black":"1e3038"}
+
+- Extended Array
+
+[{"name":"Blue Slate","hex":"477285","rgb":[71,114,133],"cmyk":[47,14,0,48],"hsb":[198,47,52],"hsl":[198,30,40],"lab":[46,-9,-15]},{"name":"Wisteria Blue","hex":"80a4ed","rgb":[128,164,237],"cmyk":[46,31,0,7],"hsb":[220,46,93],"hsl":[220,75,72],"lab":[67,7,-40]},{"name":"Frozen Water","hex":"ddfff7","rgb":[221,255,247],"cmyk":[13,0,3,0],"hsb":[166,13,100],"hsl":[166,100,93],"lab":[97,-12,0]},{"name":"Jet Black","hex":"1e3038","rgb":[30,48,56],"cmyk":[46,14,0,78],"hsb":[198,46,22],"hsl":[198,30,17],"lab":[19,-5,-7]}]
+
+- XML
+
+<palette>
+  <color name="Blue Slate" hex="477285" r="71" g="114" b="133" />
+  <color name="Wisteria Blue" hex="80a4ed" r="128" g="164" b="237" />
+  <color name="Frozen Water" hex="ddfff7" r="221" g="255" b="247" />
+  <color name="Jet Black" hex="1e3038" r="30" g="48" b="56" />
+</palette>
