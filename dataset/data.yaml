@@ -1,0 +1,13 @@
+names:
+- '0'
+- Pill
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: drugdetection-qscvy
+  url: https://universe.roboflow.com/shelley-ma/drugdetection-qscvy/dataset/1
+  version: 1
+  workspace: shelley-ma
+test: ../test/images
+train: ../train/images
+val: ../valid/images

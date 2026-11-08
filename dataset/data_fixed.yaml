@@ -1,0 +1,6 @@
+path: C:/Users/shell/OneDrive/Documents/GitHub/gullhacks/gullhacks/dataset
+train: C:/Users/shell/OneDrive/Documents/GitHub/gullhacks/gullhacks/dataset/train/images
+val: C:/Users/shell/OneDrive/Documents/GitHub/gullhacks/gullhacks/dataset/valid/images
+names:
+- '0'
+- Pill
