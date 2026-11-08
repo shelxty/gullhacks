@@ -1,6 +1,55 @@
 {
-  "duration_s": 101.7,
-  "objects": [],
+  "duration_s": 79.1,
+  "objects": [
+    {
+      "object_id": 10,
+      "form": "tablet",
+      "form_confidence": 0.64,
+      "color_cnn_guess": [
+        "PINK?"
+      ],
+      "color_measured": "pink",
+      "label_text": "(none read)",
+      "first_seen_s": 52.3,
+      "last_seen_s": 62.3
+    },
+    {
+      "object_id": 12,
+      "form": "tablet",
+      "form_confidence": 0.62,
+      "color_cnn_guess": [
+        "PINK?"
+      ],
+      "color_measured": "white",
+      "label_text": "(none read)",
+      "first_seen_s": 71.3,
+      "last_seen_s": 74.5
+    },
+    {
+      "object_id": 13,
+      "form": "tablet",
+      "form_confidence": 0.63,
+      "color_cnn_guess": [
+        "PINK?"
+      ],
+      "color_measured": "pink",
+      "label_text": "(none read)",
+      "first_seen_s": 71.3,
+      "last_seen_s": 79.1
+    },
+    {
+      "object_id": 14,
+      "form": "tablet",
+      "form_confidence": 0.63,
+      "color_cnn_guess": [
+        "PINK?"
+      ],
+      "color_measured": "pink",
+      "label_text": "(none read)",
+      "first_seen_s": 78.0,
+      "last_seen_s": 79.1
+    }
+  ],
   "water_properties": {
     "fully_dissolved": false,
     "tint": "none",
